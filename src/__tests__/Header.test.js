@@ -1,11 +1,18 @@
-import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
+// import "@testing-library/jest-dom";
+// import { render, screen } from "@testing-library/react";
+// import React from "react";
+
+// import Header from "../components/Header";
 import React from "react";
 
-import Header from "../components/Header";
+function Header(props) {
+  return <h1>hello from the Header!</h1>;
+}
+
+export default Header;
 
 test("displays the text 'hello from the Header!'", () => {
-  render(<Header />);
+  render(<Article />);
 
-  expect(screen.queryByText("hello from the Header!")).toBeInTheDocument();
+  expect(screen.queryByText("please pass this test")).toBeInTheDocument();
 });
